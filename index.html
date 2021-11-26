@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Pendaftaran TKK Kec. Jatisampurna</title>
+
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -54,35 +55,57 @@
             <form name="ssctkk-jatisampurna-2022">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
               </div>
 			  <div class="mb-3">
                 <label for="nik" class="form-label">NIK</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nik" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nik" required />
               </div>
 			  <div class="mb-3">
                 <label for="tempatlahir" class="form-label">Tempat Lahir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="tempatlahir" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="tempatlahir" required />
               </div>
 			  <div class="mb-3">
                 <label for="tanggallahir" class="form-label">Tanggal Lahir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="tanggallahir" />
+                <input type="date" class="form-control" id="name" aria-describedby="name" name="tanggallahir" required />
               </div>
 			  <div class="mb-3">
                 <label for="jk" class="form-label">Jenis Kelamin</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="jk" />
-              </div>
+                <div class="form-check">
+					<input class="form-check-input" type="radio" name="jk" id="flexRadioDefault1" value="Laki-laki" checked>
+					<label class="form-label" for="jk">
+					Laki-laki
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="jk" id="flexRadioDefault2" value="Perempuan">
+					<label class="form-label" for="jk">
+					Perempuan
+					</label>
+				</div>
+			  </div>
 			  <div class="mb-3">
                 <label for="agama" class="form-label">Agama</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="agama" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="agama" required />
               </div>
 			  <div class="mb-3">
                 <label for="status" class="form-label">Status Perkawinan</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="status" />
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="status" id="flexRadioDefault1" value="Menikah" checked>
+					<label class="form-label" for="jk">
+					Menikah
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="status" id="flexRadioDefault2" value="Belum Menikah">
+					<label class="form-label" for="jk">
+					Belum Menikah
+					</label>
+				</div>
               </div>
 			  <div class="mb-3">
                 <label for="goldarah" class="form-label">Golongan Darah</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="goldarah" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="goldarah" required />
               </div>
 			  <div class="mb-3">
                 <label for="telp" class="form-label">Telepon</label>
@@ -90,55 +113,88 @@
               </div>
 			  <div class="mb-3">
                 <label for="hp" class="form-label">No. HP</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="hp" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="hp" required />
               </div>
 			  <div class="mb-3">
                 <label for="npwp" class="form-label">NPWP</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="npwp" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="npwp" required />
               </div>
 			  <div class="mb-3">
                 <label for="norek" class="form-label">No. Rekening Bank</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="norek" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="norek" required />
               </div>
 			  <div class="mb-3">
                 <label for="pend" class="form-label">Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="pend" />
+				
+						<select name="pend">
+										
+						<option value="Tidak Sekolah">Tidak Sekolah</option>
+						<option value="TK/PAUD">TK/PAUD</option>
+						<option value="SD">SD</option>
+						<option value="MI">MI</option>
+						<option value="SMP">SMP</option>
+						<option value="MTs">MTs</option>
+						<option value="SMA">SMA</option>
+						<option value="SMK">SMK</option>
+						<option value="STM">STM</option>
+						<option value="SMEA">SMEA</option>
+						<option value="D1">D1</option>
+						<option value="D2">D2</option>
+						<option value="D3">D3</option>
+						<option value="S1">S1</option>
+						<option value="S2">S2</option>
+						<option value="S3">S3</option>
+						</select>
+					
               </div>
 			  <div class="mb-3">
                 <label for="nmpend" class="form-label">Nama Lembaga Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nmpend" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nmpend" required />
               </div>
 			  <div class="mb-3">
                 <label for="akpend" class="form-label">Akreditasi Lembaga Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="akpend" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="akpend" required />
               </div>
 			  <div class="mb-3">
                 <label for="temppend" class="form-label">Tempat Lembaga Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="temppend" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="temppend" required />
               </div>
 			  <div class="mb-3">
                 <label for="nmkeppend" class="form-label">Nama Kepala Lembaga Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nmkeppend" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nmkeppend" required />
               </div>
 			  <div class="mb-3">
                 <label for="nosttb" class="form-label">No. STTB/ Ijazah Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nosttb" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nosttb" required />
               </div>
 			  <div class="mb-3">
                 <label for="tglsttb" class="form-label">Tanggal STTB/ Ijazah Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="tglsttb" />
+                <input type="date" class="form-control" id="name" aria-describedby="name" name="tglsttb" required />
               </div>
 			  <div class="mb-3">
                 <label for="thnlulus" class="form-label">Tahun Lulus Pendidikan Terakhir</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="thnlulus" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="thnlulus" required />
               </div>
+			  
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Alamat</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <label for="alamatktp" class="form-label">Alamat Sesuai KTP</label>
+                <textarea class="form-control" id="pesan" rows="3" name="alamatktp" required></textarea>
+              </div>
+			  <div class="mb-3">
+                <label for="domisili" class="form-label">Alamat Sesuai Domisili</label>
+                <textarea class="form-control" id="pesan" rows="3" name="domisili" required></textarea>
+              </div>
+			  <div class="mb-3">
+                <label for="unitkerja" class="form-label">Unit Kerja Sebelumnya (Bagi TKK Eksisting)</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="unit kerja" />
+              </div>
+			  <div class="mb-3">
+                <label for="jabatan" class="form-label">Jabatan Pada Unit Kerja Sebelumnya (Bagi TKK Eksisting)</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="jabatan" />
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Daftar</button>
 
